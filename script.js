@@ -19,8 +19,6 @@ const perguntas = [
             "Com o tempo chuvoso se forma um abertura no chão. "
         ]
     },
-]; 
-const perguntas = [
     {
         enunciado: "Como ajudar na poluição?",
         alternativas: [
@@ -35,8 +33,6 @@ const perguntas = [
             "Apenas para preservar a natureza."
         ]
     },
-]; 
-const perguntas = [
     {
         enunciado: "O que é desmatamento?",
         alternativas: [
@@ -45,3 +41,13 @@ const perguntas = [
         ]
     },
 ]; 
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta()
